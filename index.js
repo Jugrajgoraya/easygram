@@ -1,9 +1,9 @@
 const express = require('express')
 const logger = require('morgan')
-
+const usersRouter = require('./routes/grams')
 
 const app = express();
-
+app.use('/users', usersRouter)
 app.use(logger('dev'))
 
 app.set('view engine', 'ejs')

@@ -2,12 +2,13 @@ const faker = require('faker')
 
 exports.seed = function (knex) {
     // Deletes ALL existing entries
-    return knex('events').del()
+    return knex('grams').del()
       .then(function () {
         // Inserts seed entries
-        return knex('events').insert(new Array(50).fill().map(() => {
+        return knex('grams').insert(new Array(50).fill().map(() => {
           return {
-            title: `${faker.image.imageUrl()} `
+            srcUrl: `${faker.image.avatar()}`,
+            description: `${faker.lorem.sentence()}`
           }
         }))
       })
