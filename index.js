@@ -12,9 +12,9 @@ app.use(logger('dev'))
 app.set('view engine', 'ejs')
 app.set('views', 'views')
 
-app.get('/', (req, res) => {
-  res.render('welcome')
-})
+// app.get('/', (req, res) => {
+//   res.render('welcome')
+// })
 
 // app.get('/grams', (req,res)=>{
 //   knex.select('*').from('grams')
