@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+<body>
+  <h1>New gram</h1>
+  <form method="POST" action="/grams">
+    
+    <div>
+      <label for="srcUrl">srcUrl</label>
+      <input type="text" name="srcUrl" >
+    </div>
+    <div>
+      <label for="description">description</label>
+      <input type="textarea" name="description" required>
+    </div>
+    <div>
+      <label for="price">price</label>
+      <input type="number" name="price" required>
+    </div>
+    <input type="submit" value="create">
+  </form>
+  <%- include('../partials/footer') %>
