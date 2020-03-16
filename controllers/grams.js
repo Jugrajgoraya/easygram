@@ -6,10 +6,6 @@ module.exports = {
         res.render('welcome')
     },
 
-    newUsers: (req, res)=>{
-        res.render('users/new.ejs')
-    },
-
     newGrams: (req, res)=>{
         res.render('grams/new.ejs')
     },
