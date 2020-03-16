@@ -1,5 +1,5 @@
-const events = require('./event')
+const grams = require('./grams')
 
 module.exports = {
-    events
+    grams
 }

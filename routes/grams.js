@@ -1,18 +1,18 @@
 const express = require('express')
 const knex = require('../db/client')
-const { events } = require('../controllers')
+const { grams } = require('../controllers')
 
 const router = express.Router()
 
 
-  router.get('/', events.welcome)
+  router.get('/', grams.welcome)
 
-  router.get('/grams', events.getGrams)
-  router.get('/users/new', events.newUsers)
+  router.get('/grams', grams.getGrams)
+  router.get('/users/new', grams.newUsers)
  
-  router.get('/grams/new', events.newGrams)
+  router.get('/grams/new', grams.newGrams)
   
-  router.post('/grams', events.postGrams)
+  router.post('/grams', grams.postGrams)
   
 
 module.exports = router
